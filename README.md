@@ -1,4 +1,4 @@
-# Laravel 7 二步驟註冊
+# Laravel 8 二步驟註冊
 
 藉由二步驟註冊機制，讓使用者選擇輸入相關國家、簡介等資訊， 可為帳戶多提供一些內容，也提供略過選擇。
 
@@ -12,7 +12,7 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
