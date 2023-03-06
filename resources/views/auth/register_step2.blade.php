@@ -11,8 +11,8 @@
                     <form method="POST" action="{{ route('register.step2') }}">
                         @csrf
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Country') }}</label>
+                        <div class="row mb-3">
+                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Country') }}</label>
 
                             <div class="col-md-6">
                                 <select name="country_id" class="form-control @error('country_id') is-invalid @enderror">
@@ -30,8 +30,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Biography') }}</label>
+                        <div class="row mb-3">
+                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Biography') }}</label>
 
                             <div class="col-md-6">
                                 <textarea class="form-control @error('biography') is-invalid @enderror" name="biography">{{ old('biography') }}</textarea>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row mb-0">
+                        <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Finish Registration') }}

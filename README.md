@@ -1,4 +1,4 @@
-# Laravel 8 二步驟註冊
+# Laravel 10 二步驟註冊
 
 藉由二步驟註冊機制，讓使用者選擇輸入相關國家、簡介等資訊， 可為帳戶多提供一些內容，也提供略過選擇。
 
@@ -22,8 +22,8 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/jOlUNWn.png)
+![](https://i.imgur.com/qiah5UJ.png)
 > 如果想註冊的使用者名稱符合已有人使用，你將無法註冊特定的電子郵件地址
 
-![](https://i.imgur.com/DDf9z5i.png)
+![](https://i.imgur.com/e8TrW5c.png)
 > 鼓勵使用者主動提供更多個人資訊
