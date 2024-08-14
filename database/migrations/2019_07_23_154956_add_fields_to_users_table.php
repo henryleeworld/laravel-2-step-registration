@@ -8,24 +8,19 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedInteger('country_id')->nullable();
-            $table->foreign('country_id')->references('id')->on('countries');
+            $table->foreignId('country_id')->nullable()->constrained();
             $table->text('biography')->nullable();
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
             //

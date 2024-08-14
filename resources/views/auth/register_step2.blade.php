@@ -18,7 +18,7 @@
                                 <select name="country_id" class="form-control @error('country_id') is-invalid @enderror">
                                     <option value="">-- {{ __('choose your country') }} --</option>
                                     @foreach ($countries as $country)
-                                        <option value="{{ $country->id }}">{{ $country->name }}</option>
+                                        <option value="{{ $country->id }}">{{ __($country->name) }}</option>
                                     @endforeach
                                 </select>
 

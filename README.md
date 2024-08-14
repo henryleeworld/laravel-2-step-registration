@@ -1,4 +1,4 @@
-# Laravel 10 二步驟註冊
+# Laravel 11 二步驟註冊
 
 藉由二步驟註冊機制，讓使用者選擇輸入相關國家、簡介等資訊， 可為帳戶多提供一些內容，也提供略過選擇。
 
@@ -16,14 +16,26 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移，並執行資料庫填充（如果要測試的話）。
+```sh
+$ php artisan migrate --seed
+```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/qiah5UJ.png)
+![](https://i.imgur.com/xi5w4Eu.png)
 > 如果想註冊的使用者名稱符合已有人使用，你將無法註冊特定的電子郵件地址
 
-![](https://i.imgur.com/e8TrW5c.png)
+![](https://i.imgur.com/9rJ1lnj.png)
 > 鼓勵使用者主動提供更多個人資訊
