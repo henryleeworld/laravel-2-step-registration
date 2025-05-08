@@ -5,9 +5,12 @@ namespace Database\Seeders;
 use App\Models\Country;
 use Illuminate\Database\Seeder;
 
-class CountriesTableSeeder extends Seeder
+class CountrySeeder extends Seeder
 {
-    public function run()
+    /**
+     * Run the database seeders.
+     */
+    public function run(): void
     {
         $countries = [
             [

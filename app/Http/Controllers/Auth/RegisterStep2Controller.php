@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Models\Country;
 use App\Http\Controllers\Controller;
+use App\Models\Country;
 use Illuminate\Http\Request;
 
 class RegisterStep2Controller extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
     public function __construct()
     {
         $this->middleware('auth');
@@ -24,5 +29,4 @@ class RegisterStep2Controller extends Controller
         auth()->user()->update($request->only(['biography', 'country_id']));
         return redirect()->route('home');
     }
-
 }
